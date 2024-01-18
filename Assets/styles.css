@@ -339,7 +339,7 @@ textarea {
 
 .copy-button {
     position: absolute;
-    right: 155px; /* Ajustez cette valeur en fonction de votre préférence de marge depuis la droite */
+    right: 155px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
     width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
     height: 25px;
     color: #fff;
@@ -352,7 +352,19 @@ textarea {
 
 .clear-button {
     position: absolute;
-    right: 45px; /* Ajustez cette valeur en fonction de votre préférence de marge depuis la droite */
+    right: 45px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
+    width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
+    height: 25px;
+    color: #fff;
+    background-color: #333333;
+    font-size: 10px;
+    outline: none;
+    margin-top: -55px;
+}
+
+.clear-button-text {
+    position: absolute;
+    right: 45px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
     width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
     height: 25px;
     color: #fff;
@@ -364,7 +376,7 @@ textarea {
 
 .paste-button {
     position: absolute;
-    right: 100px; /* Ajustez cette valeur en fonction de votre préférence de marge depuis la droite */
+    right: 100px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
     width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
     height: 25px;
     color: #fff;
@@ -386,6 +398,12 @@ textarea {
     text-decoration: underline;
 }
 
+.clear-button-text:hover {
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(230, 230, 230, 0.8);
+    text-decoration: underline;
+}
+
 .paste-button:hover {
     cursor: pointer;
     text-shadow: 0 0 10px rgba(230, 230, 230, 0.8);
@@ -397,6 +415,10 @@ textarea {
 }
 
 .clear-button:active {
+    background-color: rgb(200, 0, 0);
+}
+
+.clear-button-text:active {
     background-color: rgb(200, 0, 0);
 }
 
