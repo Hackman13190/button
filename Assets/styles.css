@@ -441,14 +441,12 @@ textarea {
     cursor: pointer;
     position: relative;
     margin: 0 auto; 
-    border: none;
 }
 
 .toggle-options {
     display: flex;
     overflow: hidden;
     width: 100%; 
-    border: none;
 }
 
 .toggle-options span {
@@ -473,6 +471,5 @@ textarea {
     position: absolute;
     top: 0;
     left:0;
-    border: none;
     box-shadow: 0 0 0 1px rgb(30, 30, 30, 1); /*x0 y0 floutage0 spreard le 1 s'étendre comme une flaque scale=taille spread=etendre*/
 }
