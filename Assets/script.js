@@ -44,7 +44,7 @@ function toggleOptions() {
     }
 }
 
-// Reste du code...
+
 
 function copyToClipboard() {
     const textarea = document.getElementById("userInput");
@@ -138,16 +138,16 @@ function readFile() {
             reader.onload = function(e) {
                 var arrayBuffer = e.target.result;
 
-                // Utilisation d'un DataView pour interpréter les données binaires
+
                 var dataView = new DataView(arrayBuffer);
                 var text = "";
 
                 for (var i = 0; i < dataView.byteLength; i++) {
-                    // Convertir chaque octet en caractère et l'ajouter au texte
+
                     text += String.fromCharCode(dataView.getUint8(i));
                 }
 
-                // Affichage du texte dans la console
+
                 console.log(text);
 
                 resolve(arrayBuffer);
@@ -194,7 +194,7 @@ async function decryptDataFile(e, p, fileName) {
         u = new TextDecoder(),
         b = u.decode(d);
     //fin-erreur
-    // Création d'un fichier binaire à partir du arrayBuffer déchiffré
+
     var blob = new Blob([b], {type: "application/octet-stream"});
     var link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
@@ -316,7 +316,7 @@ async function decryptFile() {
 
 
 
-// Fonction pour envoyer la requête
+
 async function encrypt(t, p) {
     try {
         const e = new TextEncoder(),
@@ -402,22 +402,22 @@ function decryptText() {
 function blinkButton() {
     const decryptButton = document.querySelector('.login-btn[value="Decrypt"]');
 
-    // Add the blink class to the button
+
     decryptButton.classList.add('blink');
 
-    // Remove the blink class after the animation completes
+
     setTimeout(() => {
         decryptButton.classList.remove('blink');
-    }, 1000); // Adjust the duration based on your animation time
+    }, 1000); 
 }
 
 function enblinkButton() {
     const encryptButton = document.querySelector('.login-btn[value="Encrypt"]');
 
-    // Add the blink class to the button
+
     encryptButton.classList.add('blink');
 
-    // Remove the blink class after the animation completes
+
     setTimeout(() => {
         encryptButton.classList.remove('blink');
     }, 1000); // Adjust the duration based on your animation time
@@ -461,10 +461,10 @@ function handleFiles(files) {
     const fileDrop = document.getElementById('fileDropArea');
 
     for (const file of files) {
-        console.log('Selected file:', file.name); ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        console.log('Selected file:', file.name); 
         selectedFileName.innerText = file.name;
 
-        // Afficher l'aperçu si le fichier est une image
+
         if (file.type.startsWith('image/')) {
             const reader = new FileReader();
             reader.onload = function (e) {
@@ -486,12 +486,12 @@ function handleFiles(files) {
 
 
 
-// Fonction pour obtenir le nombre de documents présents
+
 function getNumberOfDocuments() {
     return 1;
 }
 
-// Fonction pour mettre à jour les attributs en fonction du nombre de documents
+
 function updateFileDropAttributes() {
     const fileDropArea = document.getElementById('fileDropArea');
     const numberOfDocuments = getNumberOfDocuments();
@@ -534,10 +534,10 @@ function clearAllFile() {
 function pasteTextArea() {
     var userInput = document.getElementById('userInput');
 
-    // Essaye de lire le texte du presse-papiers
+
     navigator.clipboard.readText()
         .then((text) => {
-            // Colle le texte dans le textarea
+
             userInput.value += text;
         })
         .catch((error) => {
