@@ -10,7 +10,7 @@
 
 body
 {
-    margin-top: 50px; /******/
+    margin-top: 50px; 
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
@@ -18,7 +18,7 @@ body
     align-items: center;
     min-height: 100vh;
     background: #23242a;
-    margin-bottom: 50px; /******/
+    margin-bottom: 50px; 
 }
 
 .container
@@ -83,7 +83,7 @@ body
     width: 78%;
     height: 2000px;
     background: #45f3ff;
-    transform-origin: 50% 50%; /* Centre du box before */
+    transform-origin: 50% 50%; 
     animation: animate 6s linear infinite;
 }
 
@@ -121,7 +121,7 @@ body
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.1em;
-    margin-top: -8px; /*******************************/
+    margin-top: -8px; 
 }
 
 .inputBox {
@@ -204,7 +204,7 @@ body
 .inputBox img {
     position: absolute;
     margin-left: 63%;
-    top: 45%; /* Set to 50% to position vertically in the middle */
+    top: 45%; 
     transform: translateY(-25%);
     left: 0;
     height: 40px;
@@ -220,7 +220,7 @@ body
 
 .button-container {
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center; 
     margin-top: 75px;
     width: 100%;
     height: 8%;
@@ -236,28 +236,26 @@ body
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    margin: 0 5%; /* 5% margin on both sides */
+    margin: 0 5%; 
     transition: background-color 0.2s ease;
-
-    /* Additional styling */
     background-color: #45f3ff;
     color: #000;
 }
 
 .login-btn:first-child {
-    margin-right: 5%; /* Remove right margin for the first button */
+    margin-right: 5%; 
 }
 
 .login-btn:last-child {
-    margin-left: 5%; /* Remove left margin for the last button */
+    margin-left: 5%; 
 }
 
 .login-btn:hover {
-    opacity: 0.9;  /* You can adjust this value based on your preference */
+    opacity: 0.9;  
 }
 
 .login-btn:active {
-    background-color: #40bfc4;  /* You can adjust this value based on your preference */
+    background-color: #40bfc4;  
 }
 
 
@@ -265,23 +263,23 @@ body
 
 
 textarea {
-    background-color: rgba(0, 0, 0, 1); /* Utilisez la notation RGBA pour définir l'opacité du fond */
+    background-color: rgba(0, 0, 0, 1); 
     color: white;
     border: none; 
     resize: none;
-    margin-top: 70px; /*******************************/
-    width: 100%; /* Ajustez la largeur selon vos besoins */
+    margin-top: 70px; 
+    width: 100%; 
     height: 300px;
     font-weight: 600;
     border-radius: 5px;
     outline: none;
     display: block;
-    padding: 10px 10px 10px 10px; /**/
+    padding: 10px 10px 10px 10px; 
     border-top: 35px solid #3d3d3d;
 }
 
 #areaDrop {
-    user-select: none; /* Désactive la sélection de texte */
+    user-select: none; 
 }
 
 #filePreviewContainer {
@@ -289,7 +287,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px; /* Ajustez la marge selon vos besoins */
+    margin-bottom: 10px; 
 }
 
 #selectedFileName {
@@ -330,7 +328,7 @@ textarea {
 }
 
 .blink {
-    animation: blink 0.5s linear 2; /* 2 indicates the number of blinks */
+    animation: blink 0.5s linear 2; 
 }
 
 .textarea-container {
@@ -339,8 +337,8 @@ textarea {
 
 .copy-button {
     position: absolute;
-    right: 155px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
-    width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
+    right: 155px; 
+    width: 50px; 
     height: 25px;
     color: #fff;
     background-color: #333333;
@@ -352,8 +350,8 @@ textarea {
 
 .clear-button {
     position: absolute;
-    right: 45px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
-    width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
+    right: 45px; 
+    width: 50px; 
     height: 25px;
     color: #fff;
     background-color: #333333;
@@ -364,8 +362,8 @@ textarea {
 
 .clear-button-text {
     position: absolute;
-    right: 45px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
-    width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
+    right: 45px; 
+    width: 50px; 
     height: 25px;
     color: #fff;
     background-color: #333333;
@@ -376,8 +374,8 @@ textarea {
 
 .paste-button {
     position: absolute;
-    right: 100px; /* Ajustez cette valeur en fonction de votre prÃ©fÃ©rence de marge depuis la droite */
-    width: 50px; /* Ajustez la largeur du bouton selon vos besoins 50px*/
+    right: 100px; 
+    width: 50px; 
     height: 25px;
     color: #fff;
     background-color: #333333;
@@ -432,7 +430,7 @@ textarea {
 
 .toggle-container {
     display: flex;
-    transform: translateY(30px);/*******************************/
+    transform: translateY(30px);
     overflow: hidden;
     border-radius: 20px;
     background-color: #2bc0ca;
@@ -455,8 +453,8 @@ textarea {
     justify-content: center;
     padding: 10px;
     color: #fff;
-    position: relative; /* Ajout de position relative */
-    z-index: 1; /* Assurer que le texte est au-dessus du fond du bouton */
+    position: relative; 
+    z-index: 1; 
 }
 
 .toggle-slider {
@@ -465,7 +463,7 @@ textarea {
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgb(30, 30, 30, 1); /* Ajustez l'opacité ici */
+    background-color: rgb(30, 30, 30, 1); 
     border-radius: 20px;
     transition: transform 0.3s ease;
     position: absolute;
